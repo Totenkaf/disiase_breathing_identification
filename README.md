@@ -29,3 +29,10 @@ git push --set-upstream origin Artem-dev
 git checkout main, git pull, git checkout <your branch name>
 git rebase -i main
 ~~~
+
+- Скачать, разархивировать и удалить архив с данными:
+~~~
+sudo apt-get install wget -y
+wget https://ml_project.hb.bizmrg.com/nn_project/breath_diseases.zip -P data/ 
+unzip data/breath_diseases.zip && rm -rf data/breath_diseases.zip
+~~~
